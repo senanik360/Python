@@ -1,7 +1,13 @@
 language=' python '
 print(language)
-language.rstrip();
+print(language.rstrip());
+'''• To ensure that no whitespace exists at the right end of a string, use the rstrip()
+method.'''
 
-language.lstrip();
+print(language.lstrip());
+'''• To ensure that no whitespace exists at the left side of a string, use the lstrip()
+method.'''
 
-language.strip();
+print(language.strip());
+
+'''• You can also strip whitespace from both sides at once using strip().'''
