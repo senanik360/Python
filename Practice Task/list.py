@@ -36,6 +36,18 @@ print(course)
 not use that item in any way, use the del statement; if you want to use an item as you
 remove it, use the pop() method.'''
 
+course.remove('algo')
+print(course)
+
+'''• If you only know the value of the item you want to remove, you can
+use the remove() method.
+• The remove() method deletes only the first occurrence of the value
+you specify. If there’s a possibility the value appears more than once
+in the list, you’ll need to use a loop to make sure all occurrences of
+the value are removed.'''
+course=['oop','DS','algo','OS']
+course.sort()
+print("Courses list after sort\n",course)
 
 
 
