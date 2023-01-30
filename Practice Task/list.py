@@ -45,10 +45,28 @@ use the remove() method.
 you specify. If there’s a possibility the value appears more than once
 in the list, you’ll need to use a loop to make sure all occurrences of
 the value are removed.'''
-course=['oop','DS','algo','OS']
+course=['oop','ds','algo','os']
 course.sort()
 print("Courses list after sort\n",course)
 
+course.sort(reverse=True)
+print(course)
+'''sort this list in reverse alphabetical order by passing the argument reverse=True to the sort() method.'''
+print(sorted(course))
+'''To maintain the original order of a list but present it in a sorted order, you can use the
+sorted() function.'''
+print(course)
+
+course.reverse()
+'''reverse() doesn’t sort backward alphabetically; it simply reverses the order of the list.
+
+The reverse() method changes the order of a list permanently, but you can
+revert to the original order anytime by applying reverse() to the same list a
+second time.'''
+print(course)
+
+print("total number of course",len(course)) 
+'''find the length of a list by using the len() function.'''
 
 
 
