@@ -2,3 +2,7 @@ number=0
 while number <=5:
     print(number)
     number+=1
+flag=True
+while flag:
+    print("Hello")
+    flag=False
