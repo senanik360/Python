@@ -16,3 +16,9 @@ dimensions=(400,500)
 
 for i in dimensions:
     print(i)
+
+
+t=(3,)
+print(t)
+dimensions=(300,400)
+print(dimensions)

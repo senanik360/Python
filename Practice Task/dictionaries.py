@@ -16,3 +16,6 @@ for value in info.keys():
 
 for value in info.values():
     print(value.title())
+
+for value in info:  #return key values 
+    print(value.title())  
