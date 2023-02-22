@@ -68,3 +68,40 @@ usersF(users) #passing a list
 '''
 When you pass a list to a function, the function gets direct access to
 the contents of the list.'''
+
+
+
+def nakani(*jaIccha): # an Arbitrary Number of parameter
+    print(jaIccha)
+
+nakani('hello','valo','ok') #Passing an Arbitrary Number of Arguments
+
+'''The asterisk (*) in the parameter name *toppings tells Python to make an empty
+tuple called toppings and pack whatever values it receives into this tuple.'''
+
+def nakani2(name,*jaIccha): # aMixing Positional and Arbitrary Parameters
+    print(name)
+    print(jaIccha)
+
+nakani2('anik','valo','ok') #Mixing Positional and Arbitrary Arguments
+
+'''If you want a function to accept several different kinds of arguments, the parameter that
+accepts an arbitrary number of arguments must be placed last in the function definition.
+Python matches positional and keyword arguments first and then collects any remaining
+arguments in the final parameter.
+• You will often see the generic parameter name *args, which collects arbitrary positional
+arguments.'''
+
+
+def demo(*args):
+    print(args)
+
+demo('hello', 'tello', 'mello')
+'''*args allows you to pass the desired number of arguments to the function. '''
+
+def demo2(**kwargs):
+    print(kwargs)
+
+demo2(hello='Hello', tello='Tello')
+
+'''**kwargs stands for keyword arguments. The only difference from args is that it uses keywords and returns the values in the form of a dictionary. '''
